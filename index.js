@@ -34,4 +34,3 @@ array.forEach((item) => {
     // Key b: Value 2
     // Key c: Value 3
     //example of forEach vs for of
-
