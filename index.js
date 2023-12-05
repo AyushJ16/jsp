@@ -48,6 +48,15 @@ divs.forEach((div)=>{
 for(let div of divs){
     div.style.color="blue";
 }
+let button=document.querySelector("button");
+button.addEventListener("click",()=>{
+  if(document.body.style.backgroundColor!=="black")  
+  document.body.style.backgroundColor="black";
+  else{
+    document.body.style.backgroundColor="white";
+  }
+  });
+
 //doesnt work
 
 
