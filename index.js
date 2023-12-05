@@ -33,4 +33,23 @@ array.forEach((item) => {
     // Key a: Value 1
     // Key b: Value 2
     // Key c: Value 3
-    //example of forEach vs for of
+//     //example of forEach vs for of
+let divs=document.querySelectorAll("div");
+
+
+console.log(divs);
+divs.forEach((div)=>{
+    div.style.color="red";
+});
+// for(let div in divs){
+//     div.style.color="blue"; 
+// }
+//for in
+for(let div of divs){
+    div.style.color="blue";
+}
+//doesnt work
+
+
+
+
