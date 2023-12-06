@@ -64,6 +64,8 @@ button.onclick=(evt)=>{
     document.body.style.backgroundColor='white';
   }  
 }
+//understood JSON web tokens, cookies
+//NodeJs is a runtime environment not a framework whereas Express is a framework to write server side applications
 
 //doesnt work
 
