@@ -66,8 +66,17 @@ button.onclick=(evt)=>{
 }
 //understood JSON web tokens, cookies
 //NodeJs is a runtime environment not a framework whereas Express is a framework to write server side applications
+//by express we are creating server for the website
 
-//doesnt work
+//callback relation
+let order =(call_production)=>{
+  console.log("Order placed. Please call production");
+  call_production();
+}
+let production=()=>{
+  console.log("order placed. starting production");
+}
+order(production);
 
 
 
