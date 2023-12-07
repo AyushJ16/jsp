@@ -28,7 +28,7 @@ let divs=document.querySelectorAll("div");
 //   else{
 //     document.body.style.backgroundColor='white';
 //   }  
-// }
+// }git 
 let stocks={
   Fruits : ["Apple", "Orange", "Ban", "strawberry"],
   liquid: ["water","ice"],
@@ -112,7 +112,7 @@ async function kitchen(){
   try{
     await time(2000);
     console.log(`${stocks.Fruits[0]} was selected`);
-    await time(0000);
+    await time(1000);
     console.log(`Production has started`);
     await time(2000);
     console.log(`Fruit has been chopped`);
