@@ -1,4 +1,4 @@
-let divs=document.querySelectorAll("div");
+// let divs=document.querySelectorAll("div");
 
 
 
@@ -95,14 +95,14 @@ let stocks={
 //   console.log("Order completed");
 // })
 //async/await
-let is_shop_open=false;
+let is_shop_open=true;
 function time(ms){
   return new Promise((resolve, reject) =>{
     if(is_shop_open){
       setTimeout(resolve,ms);
     }
     else{
-      reject(console.log("shop is closed"));
+      reject(("shop is closed"));
     }
   })
 }
