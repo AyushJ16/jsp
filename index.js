@@ -99,7 +99,9 @@ let is_shop_open=true;
 function time(ms){
   return new Promise((resolve, reject) =>{
     if(is_shop_open){
-      setTimeout(resolve,ms);
+      setTimeout(()=>{
+        resolve("ok");
+      },ms);
     }
     else{
       reject(("shop is closed"));
