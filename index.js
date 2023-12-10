@@ -138,6 +138,7 @@ let stocks={
 // kitchen();
 console.log(document.cookie);
 document.cookie="name=shubham";
+document.cookie=`${encodeURIComponent("a;;")}=ayush`;
 console.log(document.cookie);
 
           
