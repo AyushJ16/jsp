@@ -141,7 +141,33 @@ document.cookie="name=shubham";
 document.cookie=`${encodeURIComponent("a;;")}=ayush`;
 console.log(document.cookie);
 
-          
+//Fetch API two times .then or two await required res.json is a promise
+// fetch("https://jsonplaceholder.typicode.com/todos/1")
+// .then((res)=>{
+//   console.log(res);
+//   return res.json();
+// })
+// .then((data)=>{
+//   console.log(data);
+// })
+// .catch((error)=>{
+//   console.log(error);
+// })
+// async function fetchdata(){
+//   const res=await fetch("https://jsonplaceholder.typicode.com/todos/1");
+//   const data=await res.json();
+//   console.log(data);
+// }
+// fetchdata();
+// async function fetchdata(){
+//   const res=await fetch("https://jsonplaceholder.typicode.com/todos/1");
+//   const data=await res.json();
+//   console.log(data);
+// }
+// fetchdata();
+
+//local storage survives tabs and browser closing and session storage only page refresh
+//storage events gets trigerred when these storages gets updated
 
 
 
