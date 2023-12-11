@@ -169,7 +169,17 @@ console.log(document.cookie);
 //local storage survives tabs and browser closing and session storage only page refresh
 //storage events gets trigerred when these storages gets updated
 
-
+//.__proto__ is used to set a prototype to an object
+// function Person(name,age){
+//   this.name=name;
+//   this.age=age;
+// }
+// Person.prototype.getName=function(){ 
+//   return this.name;
+// }
+//classes are the template thatcan be used by the objects and its prototypes
+//constructors are called automatically
+//extends keyword is for generating derived class or inheritance in javascript 
 
 
 
