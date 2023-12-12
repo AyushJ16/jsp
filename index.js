@@ -183,3 +183,31 @@ console.log(document.cookie);
 
 
 
+//method overiding
+// class Person{
+//   constructor(name,age){
+//     this.name=name;
+//     this.age=age;
+//   }
+//   getName(){
+//     return this.name;
+//   }
+// }
+
+// class Student extends Person{
+//   constructor(name,age,grade){
+//     super(name,age);
+//     this.grade=grade;
+//   }
+//   getName(){
+//     return `${super.getName()} is a student`;
+//   }
+// }
+// let p=new Person("shubham",21);
+// console.log(p.getName());
+// let s=new Student("ayush",21,10);
+// console.log(s.getName());
+// console.log(s.grade);
+
+//super constructor should be called everytime if forming a constructor and should be called before this keyword is used
+
