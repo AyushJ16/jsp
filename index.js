@@ -136,10 +136,10 @@ let stocks={
 //   }
 // }
 // kitchen();
-console.log(document.cookie);
-document.cookie="name=shubham";
-document.cookie=`${encodeURIComponent("a;;")}=ayush`;
-console.log(document.cookie);
+// console.log(document.cookie);
+// document.cookie="name=shubham";
+// document.cookie=`${encodeURIComponent("a;;")}=ayush`;
+// console.log(document.cookie);
 
 //Fetch API two times .then or two await required res.json is a promise
 // fetch("https://jsonplaceholder.typicode.com/todos/1")
@@ -211,3 +211,42 @@ console.log(document.cookie);
 
 //super constructor should be called everytime if forming a constructor and should be called before this keyword is used
 
+//IIFE- immediately invoked functions can be used to run async await without clouding the global variable namespace
+//Destructuring - used for unpacking values in arrays and in objects
+// const person={
+//   name:"shubham",
+//   age:21,
+//   greet:()=>{
+//     console.log("hello");
+//   }
+// }
+// const printName=({name,age})=>{
+//   console.log(name,age);
+// }
+// printName(person);
+// const {name,age}=person;
+// console.log(name,age);
+// const hobbies=["sports","cooking"];
+// const [hobby1,hobby2]=hobbies;
+// console.log(hobby1,hobby2);
+// using ...
+// spread operator - ...
+// const copiedArray=[...hobbies];
+// console.log(copiedArray);
+// const copiedPerson={...person};
+// console.log(copiedPerson);
+// rest operator - ...
+const toArray=(...args)=>{
+  return args;
+}
+console.log(toArray(1,2,3,4,5));
+const toArr=(arg1,arg2,...args)=>{
+  return [arg1,arg2,args];
+
+}
+const toObject=(arg1,arg2,...args)=>{
+  return {arg1,arg2,args};
+
+}
+console.log(toObject(1,2,{3:45}));
+console.log(toArr(1,2,3,4,5));
