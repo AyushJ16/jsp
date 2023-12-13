@@ -250,3 +250,17 @@ const toObject=(arg1,arg2,...args)=>{
 }
 console.log(toObject(1,2,{3:45}));
 console.log(toArr(1,2,3,4,5));
+
+//hoisting in javascript
+//var can be hoisted not initialisation let and const cannot be hoisted nor the function expression whether or not var
+//functions normally hoists as in other programming languages
+
+//closures are the functions bounded by the lexiacal environment of the parent function 
+
+// arrow functions uses lexical this whereas normal function of event refers to event element as this
+
+//javascript most important for server or backend
+
+//regular expressions -for expression matching in strings
+//regexr.com
+
